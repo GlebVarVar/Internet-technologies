@@ -1,0 +1,120 @@
+/* Переменные */
+:root {
+  --textСolor: #000000;
+
+  --galery-img-w: 245px;
+  --galery-img-h: 200px;
+
+  --galery-img-scaled-w: 260px;
+  --galery-img-scaled-h: 210px;
+}
+
+body {
+  background: #fcdfdf;
+  max-width: 900px;
+  align-self: center;
+  margin: 0 auto 0 auto;
+}
+
+#avatar { /* Задняя стенка аватара */
+  padding: 2px 2px 2px 2px;
+  margin: 10px 10px 10px 10px;
+  background-color: #000000;
+}
+
+#avatar > img { /* Аватар */
+  width: 150px;
+  height: 150px;
+  display: flex;
+  border: 2px solid #000;
+}
+
+/* Информация о пользователе */
+#profile { /* Задняя стенка профиля */
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px 10px 0px;
+  padding: 0px 10px 0px 0px;
+  text-align: center;
+}
+
+#profileInfo { /* Блок с общей информацией(Фамилия Имя, Группа) */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 30px 0px 30px 0px;
+  width: calc(100% - 150px);
+}
+
+#profileInfo > .mainInfo { /* Фамилия и Группа */
+  font-family: 'Arial Black', serif;
+  font-size: x-large;
+  color: var(--textСolor);
+  padding-left: 10px;
+}
+
+
+#achievements { /* Задняя стенка достижений */
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 10px;
+}
+
+.title { /* Любой заголовок внутри основной информации */
+  text-align: center;
+  font-family: 'Arial Black', serif;
+  font-size: large;
+  color: var(--textСolor);
+}
+
+hr { /* Линия разделитель заголовка и содержимого */
+  margin: 5px 20px 5px 20px;
+  padding: 0px 0px 0px 0px;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: var(--textСolor);
+}
+
+#achievements > ul { /* Список достижений в целом */
+  list-style-position: outside;
+  color: var(--textСolor);
+  margin: 0px 0px 5px 0px;
+}
+
+#infoAboutYourself { /* информация о себе */
+  list-style-position: outside;
+  color: var(--textСolor);
+  margin: 0px 0px 5px 0px;
+}
+
+/* Галерея */
+#galery { /* Задняя стенка */
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 0px;
+}
+
+#galery > .content { /* Блок контента */
+  margin: 0px 20px 0 20px;
+}
+
+#galery > .content > ul { /* "Список" картинок */
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 10px 10px 10px 10px;
+  margin: 0 100px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#galery > .content > ul > li { /* Каждый элемент списка */
+  display: inline-block;
+  width: var(--galery-img-w);
+  height: var(--galery-img-h);
+  background-color: #b2b2b2;
+  margin: 5px 5px 5px 5px;
+}
+
+#galery > .content > ul img { /* Сама картинка */
+  width: var(--galery-img-w);
+  height: var(--galery-img-h);
+}
