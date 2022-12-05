@@ -1,0 +1,74 @@
+*{
+  margin: 0, auto;
+}
+
+.body{
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.head1{
+    background-color: rgb(95, 66, 236);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 200px;
+}
+
+.footer1{
+    font-size: 150%;
+    color: red;
+    text-align: center;
+    background-color: brown;
+}
+
+.other-head{
+    color: orange;
+    text-transform: uppercase;
+    padding-right: 700px;
+}
+
+.form1{
+    background-color: rgb(179, 48, 182);
+}
+
+.center{
+  padding:  0 calc(50% - 1170px / 2);
+}
+
+.main-head{
+  color: red;
+  text-transform: uppercase;
+}
+
+.head1-text{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/*.Objective{
+  width: 1000px;
+  height: 200px;
+  padding-left: 150px;
+  padding-bottom: 10px;
+}*/
+
+.exp-p{
+  display: flex; 
+  justify-content: space-between;
+}
+
+.Experience{
+  width: 1000px;
+}
+
+.exp-text{
+  padding-left: 135px;
+}
+
+.Form{
+  display: flex;
+}

@@ -1,4 +1,4 @@
-export default Ksenia = () => {
+const  Ksenia = () => {
   return (
     <>
       <div id="profile">
@@ -59,3 +59,6 @@ export default Ksenia = () => {
     </>
   );
 };
+
+ 
+export default Ksenia;

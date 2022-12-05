@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 
 const DropdownComponent = (expand) => {
   return (
@@ -43,8 +44,12 @@ function NavBar() {
                 <Button variant="outline-success">Search</Button>
               </Form>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Users</Nav.Link>
+                <Nav.Link>
+                  <Link to="/">Home</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/allusers">Users</Link>
+                </Nav.Link>
                 {/* <DropdownComponent expand = {expand}/> */}
               </Nav>
             </Offcanvas.Body>

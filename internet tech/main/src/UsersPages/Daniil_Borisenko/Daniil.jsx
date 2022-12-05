@@ -1,4 +1,4 @@
-export default Daniil = () => {
+const  Daniil = () => {
   return (
     <>
       <div id="profile">
@@ -25,6 +25,7 @@ export default Daniil = () => {
           <ul>
             <p>Безумно красив и харизматичен</p>
             <p>Возбуждаю любую девчоку быстрее чем беру производную сложной функции</p>
+            <p>Интегрирую в уме</p>
           </ul>
         </div>
         <hr />
@@ -51,3 +52,6 @@ export default Daniil = () => {
     </>
   );
 };
+
+
+export default Daniil;

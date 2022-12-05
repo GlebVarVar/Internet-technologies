@@ -1,4 +1,4 @@
-export default Maks = () => {
+const Maks = () => {
     return (
         <div id="moreInfo" class="category">
         <div id="profile">
@@ -63,3 +63,6 @@ export default Maks = () => {
         </div>
     )
 }
+
+
+export default Maks;
