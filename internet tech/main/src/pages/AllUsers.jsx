@@ -1,5 +1,6 @@
 import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { useState } from 'react';
+import NavBar from '../components/Navbar';
 
 const MobileComponent = () => {
   return (
@@ -16,8 +17,6 @@ const DesktopComponent = () => {
     </div>
   );
 };
-
-
 
 const Table = () => {
   return (
@@ -130,8 +129,6 @@ const Table = () => {
   );
 };
 
-
-
 const AllUsers = (screenWidth) => {
   // const  = window.screen.width
   const screenHeight = window.screen.height;
@@ -142,7 +139,8 @@ const AllUsers = (screenWidth) => {
   // const ComponentToRender = isMobile ? MobileComponent : DesktopComponent;
   return (
     <>
-    <Table></Table>
+      <NavBar />
+      <Table></Table>
       {/* {size < 768 ? <MobileComponent /> : <DesktopComponent />}
        */}
       {/* <ComponentToRender /> */}

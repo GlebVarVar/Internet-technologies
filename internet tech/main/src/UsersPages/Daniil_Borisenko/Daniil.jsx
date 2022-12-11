@@ -1,19 +1,19 @@
 const  Daniil = () => {
   return (
-    <>
-      <div id="profile">
+    <div id="moreInfo" className="category">
+      <div id="profile" className='profile'>
         <div id="avatar">
-          <img src="./img/pingvin-poklon.jpg" alt="avatar" />
+          <img src="/images/Daniil_Borisenko/test1.jpg" alt="avatar" />
         </div>
         <div id="profileInfo">
-          <div class="mainInfo">Даниил Борисенко</div>
-          <div class="mainInfo">О712Б</div>
+          <div className="mainInfo">Даниил Борисенко</div>
+          <div className="mainInfo">О712Б</div>
         </div>
       </div>
       <hr />
-      <div id="moreInfo" class="category">
+      <div id="moreInfo" className="category">
         <div id="achievements">
-          <div class="title">Достижения</div>
+          <div className="title">Достижения</div>
           <ul>
             <li>Единственный на стипендии в группе</li>
             <li>Харош в секасе(очень)</li>
@@ -21,35 +21,34 @@ const  Daniil = () => {
         </div>
         <hr />
         <div id="infoAboutYourself">
-          <div class="title">Информация о себе</div>
+          <div className="title">Информация о себе</div>
           <ul>
-            <p>Безумно красив и харизматичен</p>
-            <p>Возбуждаю любую девчоку быстрее чем беру производную сложной функции</p>
-            <p>Интегрирую в уме</p>
+            <li>Безумно красив и харизматичен</li>
+            <li>Возбуждаю любую девчоку быстрее чем беру производную сложной функции</li>
+            <li>Интегрирую в уме</li>
           </ul>
         </div>
         <hr />
         <div id="galery">
-          <div class="title">Галерея</div>
-          <div class="content">
+          <div className="title">Галерея</div>
+          <div className="content">
             <ul>
               <li>
-                <img src="./img/cats.jpg" alt="galery image" />
+                <img src="/images/Daniil_Borisenko/test2.jpg" alt="galery image" />
               </li>
               <li>
-                <img src="./img/cats.jpg" alt="galery image" />
+                <img src="/images/Daniil_Borisenko/test3.jpg" alt="galery image" />
               </li>
               <li>
-                <img src="./img/image.jpg" alt="galery image" />
+                <img src="/images/Daniil_Borisenko/test4.jpg" alt="galery image" />
               </li>
-              <li>
-                <img src="./img/image.jpg" alt="galery image" />
-              </li>
+   
+
             </ul>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

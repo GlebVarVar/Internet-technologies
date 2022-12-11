@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
+import "./Navbar.css";
 
 const DropdownComponent = (expand) => {
   return (
@@ -24,7 +25,9 @@ function NavBar() {
     <>
       <Navbar key={expand} bg="light" expand={expand} className="mb-3">
         <Container fluid>
-          <Navbar.Brand href="#">O712Б</Navbar.Brand>
+          <Navbar.Brand to="/">
+            <Link className='nav_title' to="/">O712Б</Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}

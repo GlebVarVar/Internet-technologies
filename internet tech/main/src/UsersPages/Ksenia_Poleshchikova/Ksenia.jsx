@@ -1,19 +1,21 @@
+import './style.css'
+
 const  Ksenia = () => {
   return (
-    <>
-      <div id="profile">
+    <div id="moreInfo" className="category">
+      <div id="profile" className="profile">
         <div id="avatar">
-          <img src="./img/av.jpg" alt="avatar" />
+          <img src="/images/Ksenia_Poleshchikova/av.jpg" alt="avatar" />
         </div>
         <div id="profileInfo">
-          <div class="mainInfo">Полещикова Ксения</div>
-          <div class="mainInfo">Группа: О712Б</div>
-          <div class="status">Статус: Чтобы найти новый путь, нужно уйти со старой дороги...</div>
+          <div className="mainInfo">Полещикова Ксения</div>
+          <div className="mainInfo">Группа: О712Б</div>
+          <div className="status">Статус: Чтобы найти новый путь, нужно уйти со старой дороги...</div>
         </div>
       </div>
-      <div id="moreInfo" class="category">
+      <div id="moreInfo" className="category">
         <div id="achievements">
-          <div class="title">Достижения</div>
+          <div className="title">Достижения</div>
           <hr />
           <ul>
             <li>Золотая медаль за 11 классов</li>
@@ -22,7 +24,7 @@ const  Ksenia = () => {
           </ul>
         </div>
         <div id="facts">
-          <div class="title">Факты</div>
+          <div className="title">Факты</div>
           <hr />
           <ul>
             <li>Люблю котов и татарскую кухню</li>
@@ -30,33 +32,33 @@ const  Ksenia = () => {
           </ul>
         </div>
         <div id="galery">
-          <div class="title">Галерея</div>
+          <div className="title">Галерея</div>
           <hr />
-          <div class="content">
+          <div className="content">
             <ul>
               <li>
-                <img src="./img/av5.jpg" alt="galery image" />
+                <img src="/images/Ksenia_Poleshchikova/av5.jpg" alt="galery image" />
               </li>
               <li>
-                <img src="./img/av2.jpg" alt="galery image" />
+                <img src="/images/Ksenia_Poleshchikova/av2.jpg" alt="galery image" />
               </li>
               <li>
-                <img src="./img/av4.jpg" alt="galery image" />
+                <img src="/images/Ksenia_Poleshchikova/av4.jpg" alt="galery image" />
               </li>
               <li>
-                <img src="./img/av8.jpg" alt="galery image" />
+                <img src="/images/Ksenia_Poleshchikova/av8.jpg" alt="galery image" />
               </li>
               <li>
-                <img src="./img/av1.jpg" alt="galery image" />
+                <img src="/images/Ksenia_Poleshchikova/av1.jpg" alt="galery image" />
               </li>
               <li>
-                <img src="./img/av7.jpg" alt="galery image" />
+                <img src="/images/Ksenia_Poleshchikova/av7.jpg" alt="galery image" />
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
