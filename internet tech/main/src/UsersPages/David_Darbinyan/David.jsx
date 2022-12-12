@@ -1,6 +1,6 @@
 import './style.css';
 
-const David = () => {
+const Polina = () => {
 
 
   return (
@@ -68,4 +68,4 @@ const David = () => {
   );
 };
 
-export default David;
+export default Polina;

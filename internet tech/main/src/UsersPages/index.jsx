@@ -9,5 +9,31 @@ import Vladislav from './Vladislav_Kvasyuk/Vladislav.jsx';
 import David from './David_Darbinyan/David.jsx';
 import Alexander from './Alexander_Antropov/Alexander.jsx';
 import Andrey from './Andrey_Tselikhovich/Andrey.jsx';
+import Petrov from './Alexander_Petrov/Petrov.jsx';
+import Kirill from './Kirill_Loginov/Kirill.jsx';
+import Dmitry from './Dmitry_Ignatchenko/Dmitry.jsx';
+import Ivan from './Ivan_Korostelev/Ivan.jsx';
+import Kukareko from './Ivan_Kukareko/Kukareko.jsx';
+import Polina from './Polina_Kurdyumova/Polina.jsx';
+import Evgeniy from './Evgeny_Sharov/Evgeniy.jsx';
 
-export { Maks, Daniil, Ksenia, Valery, Lev, Roman, Natalia, Vladislav, David, Alexander, Andrey };
+export {
+  Dmitry,
+  Polina,
+  Evgeniy,
+  Maks,
+  Kirill,
+  Daniil,
+  Ksenia,
+  Valery,
+  Lev,
+  Roman,
+  Natalia,
+  Vladislav,
+  David,
+  Alexander,
+  Andrey,
+  Petrov,
+  Ivan,
+  Kukareko
+};

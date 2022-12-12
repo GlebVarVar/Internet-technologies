@@ -1,0 +1,198 @@
+/* Переменные */
+:root {
+    --text-color: #eee;
+
+    --galery-img-w: 245px;
+    --galery-img-h: 200px;
+
+    --galery-img-scaled-w: 260px;
+    --galery-img-scaled-h: 210px;
+}
+
+/* Подгон разрешения под четко заданные границы */
+body {
+    background-color: #aaa;
+    max-width: 900px;
+    align-self: center;
+    margin: 0px auto 0px auto;
+}
+@media screen and (max-width: 1200px) {
+    body {
+        max-width: 900px;
+    }
+}
+@media screen and (max-width: 950px) {
+    body {
+        max-width: 650px;
+    }
+}
+@media screen and (max-width: 700px) {
+    body {
+        max-width: 400px;
+    }
+}
+
+/* Глобальные свойства */
+* {
+    border-radius: 8px;
+}
+.category, #profile {
+    background-color: #808080;
+}
+.category > div, #profileInfo > * {
+    background-color: #707070;
+}
+
+/* Информация о пользователе */
+#profile { /* Задняя стенка профиля */
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 0px 0px;
+}
+
+#avatar { /* Задняя стенка аватара */
+    padding: 2px 2px 2px 2px;
+    margin: 10px 10px 10px 10px;
+    background-color: #606060;
+}
+
+#avatar > img { /* Аватар */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    border: 2px solid #000; 
+}
+
+#profileInfo { /* Блок с общей информацией(Фамилия Имя, Группа, Статус) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px 0px 30px 0px;
+    width: calc(100% - 150px);
+}
+
+#profileInfo > .mainInfo, #profileInfo > .status { /* Фамилия и Группа */
+    font-family: 'Arial Black';
+    font-size: x-large;
+    color: var(--text-color);
+    padding-left: 10px;
+}
+
+
+
+/* Основная информация(достижения, ссылки на другиx) */
+#moreInfo { /* Задняя стенка */
+    margin: 0px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+#achievements { /* Задняя стенка достижений */
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+     font-family: 'Arial Black';
+     font-size: small;
+}
+
+.title { /* Любой заголовок внутри основной информации */
+    text-align: center;
+    font-family: 'Arial Black';
+    font-size: large;
+    color: var(--text-color);
+}
+
+hr { /* Линия разделитель заголовка и содержимого */
+    margin: 5px 20px 5px 20px;
+    padding: 0px 0px 0px 0px;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: var(--text-color);
+}
+
+#achievements > ul { /* Список достижений в целом */
+    list-style-position: outside;
+    color: var(--text-color);
+    margin: 0px 0px 5px 0px;
+}
+
+/* Галерея */
+#galery { /* Задняя стенка */
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 0px;
+}
+
+#galery > .content { /* Блок контента */
+    margin: 0px 20px 0px 20px;
+}
+
+#galery > .content > ul { /* "Список" картинок */
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#galery > .content > ul > li { /* Каждый элемент списка */
+    display: inline-block;
+    width: var(--galery-img-w);
+    height: var(--galery-img-h);
+    background-color: #b2b2b2;
+    margin: 6px 6px 6px 6px;
+}
+
+#galery > .content > ul img { /* Сама картинка */
+    width: var(--galery-img-w);
+    height: var(--galery-img-h);
+}
+
+/* Наведение мыши */
+#galery > .content > ul > li:hover, #galery > .content > ul img:hover {
+    width: var(--galery-img-scaled-w);
+    height: var(--galery-img-scaled-h);
+}
+
+#galery > .content > ul > li:hover {
+    margin: -2px -2px -2px -2px;
+}
+.middle{
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.btn{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-family: 'Arial Black';
+  text-decoration: none;
+  
+  border: 2px solid #ff7675;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}

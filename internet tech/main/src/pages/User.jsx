@@ -15,6 +15,13 @@ import {
   David,
   Alexander,
   Andrey,
+  Petrov,
+  Kirill,
+  Dmitry,
+  Ivan,
+  Kukareko,
+  Polina,
+  Evgeniy
 } from '../UsersPages/index';
 
 const User = () => {
@@ -31,9 +38,9 @@ const User = () => {
       case 'valera':
         UserPage = Valery;
         break;
-      case 'denis':
+      // case 'denis':
         // UserPage = Denis;
-        break;
+        // break;
       case 'alexander':
         UserPage = Alexander;
         break;
@@ -43,9 +50,9 @@ const User = () => {
       case 'maxim':
         UserPage = Maks;
         break;
-      case 'alexey':
+      // case 'alexey':
         // UserPage = Alexey;
-        break;
+        // break;
       case 'lev':
         UserPage = Lev;
         break;
@@ -53,28 +60,28 @@ const User = () => {
         UserPage = David;
         break;
       case 'dmitry':
-        // UserPage = Dmitry;
+        UserPage = Dmitry;
         break;
       case 'vladislav':
         UserPage = Vladislav;
         break;
-      case 'mikhail':
+      // case 'mikhail':
         // UserPage = Mikhail;
-        break;
+        // break;
       case 'ivan':
-        // UserPage = Ivan;
+        UserPage = Ivan;
         break;
-      case 'gleb':
+      // case 'gleb':
         // UserPage = Gleb;
-        break;
+        // break;
       case 'kukareko':
-        // UserPage = Kukareko;
+        UserPage = Kukareko;
         break;
       case 'polina':
-        // UserPage = Polina;
+        UserPage = Polina;
         break;
       case 'kirill':
-        // UserPage = Kirill;
+        UserPage = Kirill;
         break;
       case 'ksenia':
         UserPage = Ksenia;
@@ -82,12 +89,12 @@ const User = () => {
       case 'natalia':
         UserPage = Natalia;
         break;
-      case 'seredokhin':
+      // case 'seredokhin':
         // UserPage = Seredokhin;
-        break;
-      case 'fomenko':
+        // break;
+      // case 'fomenko':
         // UserPage = Fomenko;
-        break;
+        // break;
       case 'roman':
         UserPage = Roman;
         break;
@@ -95,11 +102,17 @@ const User = () => {
         UserPage = Andrey;
         break;
       case 'evgeniy':
-        // UserPage = Evgeniy;
+        UserPage = Evgeniy;
         break;
       case 'petrov':
-        // UserPage = Petrov;
+        UserPage = Petrov;
         break;
+      default:
+        return (
+          <Page404/>
+        )
+      
+
     }
     return (
       <>

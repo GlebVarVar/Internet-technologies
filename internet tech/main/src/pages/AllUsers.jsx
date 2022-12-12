@@ -1,6 +1,10 @@
 import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { useState } from 'react';
 import NavBar from '../components/Navbar';
+import { useNavigate } from 'react-router-dom';
+
+import data from '../store/data';
+// import './AllUsers.css';
 
 const MobileComponent = () => {
   return (
@@ -129,6 +133,58 @@ const Table = () => {
   );
 };
 
+const TestTable = () => {
+  const navigate = useNavigate();
+
+  return (
+    <>
+      <MDBTable align="middle">
+        <MDBTableHead>
+          <tr>
+            <th scope="col">Student</th>
+            <th scope="col">IT profession</th>
+            <th scope="col">Status</th>
+          </tr>
+        </MDBTableHead>
+        {data.map((item) => {
+          return (
+            <tr className='trrr' onClick={() => {
+              navigate(item.route)
+            }}>
+              <td>
+                <div className="d-flex align-items-center">
+                  <img
+                    src={item.avatar}
+                    alt=""
+                    style={{ width: '45px', height: '45px' }}
+                    className="rounded-circle"
+                  />
+                  <div className="ms-3">
+                    <p className="fw-bold mb-1">{item.user}</p>
+                    <p className="text-muted mb-0">{item.mail}</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+              <span class="input">
+                {/* <input type="text" placeHolder="Gradient border focus fun"/> */}
+                <p>Software developer</p>
+              </span>
+              
+              </td>
+              <td>
+                <MDBBadge color="success" pill>
+                  Active
+                </MDBBadge>
+              </td>
+            </tr>
+          );
+        })}
+      </MDBTable>
+    </>
+  );
+};
+
 const AllUsers = (screenWidth) => {
   // const  = window.screen.width
   const screenHeight = window.screen.height;
@@ -140,7 +196,8 @@ const AllUsers = (screenWidth) => {
   return (
     <>
       <NavBar />
-      <Table></Table>
+      <TestTable />
+      {/* <Table></Table> */}
       {/* {size < 768 ? <MobileComponent /> : <DesktopComponent />}
        */}
       {/* <ComponentToRender /> */}
