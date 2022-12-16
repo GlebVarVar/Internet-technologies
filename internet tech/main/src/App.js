@@ -7,16 +7,13 @@ import { Home, User, AllUsers } from './pages';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home/>
+    element: <AllUsers />
   },
   {
-    path: '/allusers/:userid',
+    path: '/:userid',
     element: <User />,
   },
-  {
-    path: '/allusers',
-    element: <AllUsers />,
-  },
+  
 ]);
 
 function App() {
