@@ -21,7 +21,8 @@ import {
   Ivan,
   Kukareko,
   Polina,
-  Evgeniy
+  Evgeniy,
+  Gleb,
 } from '../UsersPages/index';
 
 const User = () => {
@@ -71,9 +72,9 @@ const User = () => {
       case 'ivan':
         UserPage = Ivan;
         break;
-      // case 'gleb':
-        // UserPage = Gleb;
-        // break;
+      case 'gleb':
+        UserPage = Gleb;
+        break;
       case 'kukareko':
         UserPage = Kukareko;
         break;

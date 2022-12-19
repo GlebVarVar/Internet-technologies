@@ -16,12 +16,14 @@ import Ivan from './Ivan_Korostelev/Ivan.jsx';
 import Kukareko from './Ivan_Kukareko/Kukareko.jsx';
 import Polina from './Polina_Kurdyumova/Polina.jsx';
 import Evgeniy from './Evgeny_Sharov/Evgeniy.jsx';
+import Gleb from './Gleb_Kostrov/Gleb.jsx';
 
 export {
   Dmitry,
   Polina,
   Evgeniy,
   Maks,
+  Gleb,
   Kirill,
   Daniil,
   Ksenia,

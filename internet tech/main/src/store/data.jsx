@@ -110,7 +110,7 @@ const data = [
     user: 'Kostrov Gleb Yurievich',
     route: 'gleb',
     mail: "o712b12@voenmeh.ru",
-    avatar: "/images/Alimov_Valery/jambo.jpg"
+    avatar: "/images/Kostrov_Gleb/gl4.jpg"
 
 
   },
